@@ -51,6 +51,7 @@ Configuration
 ~~~~~~~~~~~~~
 
 Stored in `/etc/arkmanager/arkmanager.cfg` and `/etc/arkmanager/instances/<instancename>.cfg` you can find the variables needed to start the server, like the port numbers, the system environment variables and so on.
+Note the ports for rcon must be open for commands to be issued through arkmanager this however doesn't need to be open on the firewall if you don't want to allow rcon from outside the server.
 
 Also, in this file, you can specify any parameter you want to add to the startup command of ARK server.
 These parameters must be prefixed by the `ark_` string, some example could be:
@@ -80,7 +81,7 @@ Install ARK Server
 To install ARK Server just run this command as normal user:
 
 [source,sh]
-arkmanager install
+arkmanager install @instancename
 
 Usage
 -----
